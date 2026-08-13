@@ -1,0 +1,20 @@
+[project]
+name = "sales-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "eviva2000", email = "arjomandielaheh@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "openai-agents>=0.20.0",
+    "python-dotenv>=1.2.2",
+]
+
+[project.scripts]
+sales-agent = "sales_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
